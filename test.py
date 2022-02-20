@@ -156,4 +156,121 @@
 #     print('Урожай был невероятен')
 # else:
 #     print('Бан')
-password = int(input('Введите пароль'))
+# password = int(input('Введите пароль'))
+
+"""Цикл for функция range"""
+
+# numbers = 1, 2, 3, 4
+#
+# for i in numbers:
+#     print(i)
+
+# for i in range(10, 1, -1):
+#     print(i)
+
+# start = int(input('Введите начальное число последовательности: '))
+# stop = int(input('Введите конечное число последовательности: '))
+#
+# for number in range(stop, start, -1):
+#   if number %5 == 0:
+#     if number %10 == 0:
+#       continue
+#     print(number)
+#
+# string = 'Привет Андрей!'
+#
+# for i in string:
+#    print(i)
+
+# for i in range(0,6):
+#   if i == 3 or i == 6:
+#     continue
+#   print(i)
+# start = int(input('Введите начальное число последовательности: '))
+# stop = int(input('Введите конечное число последовательности: '))
+#
+# ort = 0
+# pol = 0
+#
+# for number in range(start,stop):
+#     if number < 0:
+#         ort += number
+#     else:
+#         pol += number
+#
+# print(f'Сумма положительных чисел: {pol}')
+# print(f'Сумма отрицательных чисел: {ort}')
+
+# start = int(input('Введите начальное число последовательности: '))
+# stop = int(input('Введите конечное число последовательности: '))
+#
+# quantity = 0
+# sum_of_numbers = 0
+#
+# for number in range(start,stop):
+#    sum_of_numbers += number
+#    quantity += 1
+#
+# final = sum_of_numbers // quantity
+#
+#
+# print(f'Среднее арифметическое последовательности от {start} до {stop}: {final}')
+
+# number_of_string = 0
+#
+# for i in range(1, 6):
+#   number_of_string += 1
+#   print(f'Строка {number_of_string} 0')
+
+# n = int(input('Введите число: '))
+#
+# for i in range(1, n+1):
+#   if n > 7:
+#     break
+#   if i == 1:
+#     print('Красный')
+#   if i == 2:
+#     print('Оранжевый')
+#   if i == 3:
+#     print('Желтый')
+#   if i == 4:
+#     print('Зеленый')
+#   if i == 5:
+#     print('Голубой')
+#   if i == 6:
+#     print('Синий')
+#   if i == 7:
+#     print('Фиолетовый')
+#
+#
+# if n > 7 or n < 1:
+#     print('Радуга состоит из 7 цветов')
+# n = int(input('Введите число: '))
+#
+# print(f'{n} * 1 = {n * 1}')
+# print(f'{n} * 2 = {n * 2}')
+# print(f'{n} * 3 = {n * 3}')
+# print(f'{n} * 4 = {n * 4}')
+# print(f'{n} * 5 = {n * 5}')
+# print(f'{n} * 6 = {n * 6}')
+# print(f'{n} * 7 = {n * 7}')
+# print(f'{n} * 8 = {n * 8}')
+# print(f'{n} * 9 = {n * 9}')
+# print(f'{n} * 10 = {n * 10}')
+
+
+# for i in range(1, 11):
+#   print(f'{n} x {i} = {n * i}')
+
+# a = 'Denis', 'Hamenkov'
+#
+# # for i in a:
+# #   print(i)
+# #   for j in a:
+# #     print(j)
+
+
+
+
+
+
