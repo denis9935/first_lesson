@@ -109,4 +109,41 @@
 # import random
 # n = int(input('Введите размер списка: '))
 # list_6 = [random.randint(0, 100) for i in range(n)]
-# print(list_6)
+# print(list
+
+
+"""  Классы  """
+
+# class  Dog:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def sit(self):
+#         """Собака содиться по каманде"""
+#         print(f'{self.name} сел')
+#
+#     def run(self):
+#         print(f'{self.name} побежала')
+#
+#     def get_info(self, age):
+#         print(f'Имя: {self.name}\nВозраст: {age}')
+#
+# my_pet = Dog('Bobik')
+#
+# my_pet.get_info(5)
+#
+# my_pet_2= Dog('Sharik')
+# my_pet_2.run()
+# my_pet_2.get_info(6)
+
+class Reustaurant:
+    def __init__(self, reustaurant_name, cuisine_type):
+        self.name = reustaurant_name
+        self.cuisine = cuisine_type
+
+    def describe_reustaurant(self, city=None):
+        if city:
+            print(f'Название ресторана: {self.name} открыт')
+
+    def cusisine_(self):
+        print(f'Блюдо: {self.cuisine}')
