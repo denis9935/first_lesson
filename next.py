@@ -136,14 +136,51 @@
 # my_pet_2.run()
 # my_pet_2.get_info(6)
 
-class Reustaurant:
-    def __init__(self, reustaurant_name, cuisine_type):
-        self.name = reustaurant_name
-        self.cuisine = cuisine_type
+# class Reustaurant:
+#     def __init__(self, reustaurant_name, cuisine_type):
+#         self.name = reustaurant_name
+#         self.cuisine = cuisine_type
+#
+#     def describe_reustaurant(self, city=None):
+#         if city:
+#             print(f'Название ресторана: {self.name} открыт')
+#
+#     def cusisine_(self):
+#         print(f'Блюдо: {self.cuisine}')
 
-    def describe_reustaurant(self, city=None):
-        if city:
-            print(f'Название ресторана: {self.name} открыт')
+"""Цикл While и модуль random"""
+# a = 5
+# while a > 0:
+#     a -= 1
+#     print(a)
 
-    def cusisine_(self):
-        print(f'Блюдо: {self.cuisine}')
+
+# import random
+# names = ['name_1', 'name_2', 'name_3', 'name_4',]
+# winner = random.choice(names)
+# print(winner)
+"""Работа с файлами"""
+
+# with open('file_name.txt', 'r', encoding='utf-8') as text_file:
+#     # text_file.write('Hello world!')
+#     file_info = text_file.read()
+#     print(file_info)
+
+
+def sum_(num_1, num_2):
+    print(1)
+    lust_of_nums_1 = [int(num) for num in str(num_1)]
+    lust_of_nums_2 = [int(num) for num in str(num_2)]
+
+    if sum(lust_of_nums_1) % 7 == 0 and sum(lust_of_nums_2) % 7 == 0:
+        yield f'Билеты {sum(lust_of_nums_1)}, {sum(lust_of_nums_2)} счастливые'
+    # if sum(lust_of_nums_1) % 7 == 0:
+    #     print(f'Билет {sum(lust_of_nums_1)} счастливый')
+    # if sum(lust_of_nums_2) % 7 == 0:
+    #     print(f'Билет {sum(lust_of_nums_2)} счастливый')
+
+i = list(range(111111, 999999))
+
+for num in sum_(i, i+1):
+    print(num)
+
