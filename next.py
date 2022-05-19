@@ -167,20 +167,66 @@
 #     print(file_info)
 
 
-def sum_(num_1, num_2):
-    print(1)
-    lust_of_nums_1 = [int(num) for num in str(num_1)]
-    lust_of_nums_2 = [int(num) for num in str(num_2)]
+# def sum_(num_1, num_2):
+#     print(1)
+#     lust_of_nums_1 = [int(num) for num in str(num_1)]
+#     lust_of_nums_2 = [int(num) for num in str(num_2)]
+#
+#     if sum(lust_of_nums_1) % 7 == 0 and sum(lust_of_nums_2) % 7 == 0:
+#         yield f'Билеты {sum(lust_of_nums_1)}, {sum(lust_of_nums_2)} счастливые'
+#     # if sum(lust_of_nums_1) % 7 == 0:
+#     #     print(f'Билет {sum(lust_of_nums_1)} счастливый')
+#     # if sum(lust_of_nums_2) % 7 == 0:
+#     #     print(f'Билет {sum(lust_of_nums_2)} счастливый')
+#
+# i = list(range(111111, 999999))
+#
+# for num in sum_(i, i+1):
+#     print(num)
 
-    if sum(lust_of_nums_1) % 7 == 0 and sum(lust_of_nums_2) % 7 == 0:
-        yield f'Билеты {sum(lust_of_nums_1)}, {sum(lust_of_nums_2)} счастливые'
-    # if sum(lust_of_nums_1) % 7 == 0:
-    #     print(f'Билет {sum(lust_of_nums_1)} счастливый')
-    # if sum(lust_of_nums_2) % 7 == 0:
-    #     print(f'Билет {sum(lust_of_nums_2)} счастливый')
+"""Функции"""
 
-i = list(range(111111, 999999))
+# users = []
+#
+# def det_username(username, date=None) -> list:
+#     global users
+#
+#     if date:
+#         users.apend(f'{username.title()}, {date})
+#     else:
+#         users.append(username.title())
+#     return users
+#
+# get_username('Денис')
+# get_username(username='Максим')
+#
+# users_1 = get_username('петр', '01.12.2012')
+#
+# users_1 = get_username('Петр')
+#
+# for name in users_1:
+#     print(name)
 
-for num in sum_(i, i+1):
-    print(num)
+# def sum_range(start, end):
+#
+#     list_ = range(start, end + 1)
+#
+#     print(sum(list_))
+#
+# sum_range(1, 5)
+
+import time
+
+def timer():
+    def wrapper(func):
+        start_time = time.time()
+        func()
+        end_time = time.time()
+        print(f'Время выполнения функции: {end_time - start_time}')
+    return wrapper
+
+@timer()
+def get_name():
+    name = input('Введите ваше имя:')
+    print('Привет Денис')
 
